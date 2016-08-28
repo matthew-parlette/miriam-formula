@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # vim: ft=sls
 
-{% from "template/map.jinja" import template with context %}
+{% from "miriam/map.jinja" import miriam with context %}
 
-template-pkg:
-  pkg.installed:
-    - name: {{ template.pkg }}
+miriam-image:
+  dockerng.image_present:
+    - name: {{ miriam.image }}
