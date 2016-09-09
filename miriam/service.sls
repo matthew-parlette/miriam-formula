@@ -11,7 +11,7 @@ miriam-container:
   dockerng.running:
     - name: {{ miriam.name }}
     - image: {{ miriam.image }}
-    - binds: {{ miriam.config }}:/miriam/config.yaml
+    - binds: {{ miriam.config }}:/usr/src/app/config.yaml
     - require:
       - dockerng: miriam-image
     - watch:

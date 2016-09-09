@@ -6,3 +6,4 @@
 miriam-image:
   dockerng.image_present:
     - name: {{ miriam.image }}
+    - force: True
